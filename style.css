@@ -1,0 +1,88 @@
+:root {
+    --primary: #003366;
+    --secondary: #d32f2f;
+    --bg: #f0f2f5;
+    --glass: rgba(255, 255, 255, 0.8);
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: #333;
+}
+
+/* Navbar المطور */
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 10%; background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky; top: 0; z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a {
+    text-decoration: none; color: #555; font-weight: 600;
+    transition: 0.3s; padding: 5px 0;
+}
+nav ul li a:hover, nav ul li a.active { color: var(--primary); border-bottom: 3px solid var(--primary); }
+
+/* Containers */
+.container { width: 85%; margin: auto; padding: 50px 0; }
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Project Card الرهيب */
+.project-card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,51,102,0.15);
+    border-color: var(--primary);
+}
+
+.project-card h3 {
+    color: var(--primary); margin-bottom: 15px; font-size: 1.3rem;
+}
+
+.project-card p {
+    font-size: 0.95rem; line-height: 1.6; color: #666; margin-bottom: 20px;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags span {
+    background: #e9ecef; color: var(--primary);
+    padding: 5px 12px; border-radius: 15px; font-size: 0.75rem; font-weight: bold;
+}
+
+.status-badge {
+    position: absolute; top: 15px; right: 15px;
+    background: #fff3cd; color: #856404;
+    padding: 4px 10px; border-radius: 10px; font-size: 0.7rem; font-weight: bold;
+}
+
+footer {
+    background: #1a1a1a; color: white; text-align: center;
+    padding: 30px; margin-top: 50px;
+}

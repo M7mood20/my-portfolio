@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Mahmoud Elgendy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .projects-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .project-card-fakhama {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur;
+        }
+        .project-info-container p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-list span {
+            background: #003366;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* تنسيق المشاريع الأصغر */
+        .other-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .mini-card {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-bottom: 4px solid #003366;
+            transition: 0.3s;
+        }
+
+        .mini-card:hover { transform: translateY(-5px); }
+        .mini-card h4 { color: #d32f2f; margin-bottom: 10px; }
+        
+        @media (max-width: 800px) {
+            .project-card-fakhama { flex-direction: column; }
+            .project-image-container { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mahmoud.Dev</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #003366; margin-bottom: 40px;">Featured Work</h2>
+
+        <div class="projects-wrapper">
+            
+            <div class="project-card-fakhama">
+                <div class="project-image-container">
+                    <img src="dashboard.png" alt="Egyptian League Dashboard">
+                </div>
+                <div class="project-info-container">
+                    <span style="color: #d32f2f; font-weight: bold; font-size: 0.8rem;">NEW PROJECT</span>
+                    <h3>📊 Egyptian League Dashboard</h3>
+                    <p>
+                        An interactive Power BI dashboard designed to analyze the Egyptian Premier League. 
+                        It visualizes team performance, rankings, and goal statistics through custom KPIs and interactive charts.
+                    </p>
+                    <div class="tag-list">
+                        <span>Power BI</span> <span>Data Visualization</span> <span>Excel</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px; color: #003366; border-left: 5px solid #d32f2f; padding-left: 15px;">Other Technical Projects</h3>
+            
+            <div class="other-projects-grid">
+                <div class="mini-card">
+                    <h4>🏢 Prison Management System</h4>
+                    <p style="font-size: 0.9rem; color: #666;">Developing a backend system using .NET to manage institutional data, focusing on database relationships.</p>
+                    <div class="tag-list" style="margin-top:15px;"><span>.NET</span> <span>SQL Server</span></div>
+                </div>
+
+                <div class="mini-card">
+                    <h4>🧬 Health Insurance Prediction</h4>
+                    <p style="font-size: 0.9rem; color: #666;">A study project on building ML models to predict costs, focusing on data preprocessing with Python.</p>
+                    <div class="tag-list" style="margin-top:15px;"><span>Python</span> <span>AI Basics</span></div>
+                </div>
+
+                <div class="mini-card">
+                    <h4>📚 Library System (Node.js)</h4>
+                    <p style="font-size: 0.9rem; color: #666;">A web application for book management implementing CRUD operations using Node.js.</p>
+                    <div class="tag-list" style="margin-top:15px;"><span>Node.js</span> <span>Web Dev</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 80px;">
+        <p>&copy; 2026 Mahmoud Emad Elgendy | IT Student @ Sinai University</p>
+    </footer>
+</body>
+</html>

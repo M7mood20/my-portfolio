@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Mahmoud Elgendy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .contact-box {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-box:hover {
+            transform: translateY(-8px);
+            border-color: #003366;
+            box-shadow: 0 15px 35px rgba(0,51,102,0.1);
+        }
+        .icon-bg {
+            width: 60px;
+            height: 60px;
+            background: #f0f2f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+        .contact-box:hover .icon-bg {
+            background: #003366;
+            color: white;
+        }
+        .contact-box h3 {
+            font-size: 1.1rem;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        .contact-box p {
+            font-size: 0.9rem;
+            color: #666;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mahmoud.Dev</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5rem; color: #003366; margin-bottom: 10px;">Let's Connect</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px;">Feel free to reach out on any of these platforms</p>
+
+        <div class="contact-grid">
+            <a href="https://linkedin.com/in/mahmoud-elgendy-86670a355" target="_blank" class="contact-box">
+                <div class="icon-bg">🔗</div>
+                <h3>LinkedIn</h3>
+                <p>Professional Profile</p>
+            </a>
+
+            <a href="https://github.com/M7mood20" target="_blank" class="contact-box">
+                <div class="icon-bg">🐙</div>
+                <h3>GitHub</h3>
+                <p>github.com/M7mood20</p>
+            </a>
+
+            <a href="mailto:m.elgendy2465@su.edu.eg" class="contact-box">
+                <div class="icon-bg">🎓</div>
+                <h3>Academic Email</h3>
+                <p>m.elgendy2465@su.edu.eg</p>
+            </a>
+
+            <a href="mailto:YOUR_PERSONAL_EMAIL@gmail.com" class="contact-box">
+                <div class="icon-bg">📧</div>
+                <h3>Personal Email</h3>
+                <p>me405609@gmail.com</p>
+            </a>
+
+            <div class="contact-box">
+                <div class="icon-bg">📱</div>
+                <h3>Phone</h3>
+                <p>01152625833</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; text-align: center; background: rgba(0,51,102,0.05); padding: 30px; border-radius: 20px;">
+            <p style="font-weight: 600; color: #003366;">I'm always open to discussing new projects, creative ideas or opportunities.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mahmoud Emad Elgendy | Sinai University</p>
+    </footer>
+</body>
+</html>

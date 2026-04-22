@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahmoud Elgendy | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .hero-wrapper {
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top right, #e0e8f5, #f4f6fb);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* دوائر ديكور في الخلفية لزيادة الفخامة */
+        .circle-dec {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(0, 51, 102, 0.03);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .glass-hero {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            padding: 60px;
+            border-radius: 30px;
+            text-align: center;
+            max-width: 900px;
+            z-index: 1;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .hero-h1 {
+            font-size: 4rem;
+            color: #003366;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero-h1 span {
+            color: #d32f2f;
+        }
+
+        .typewriter {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .main-p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: #003366;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 51, 102, 0.2);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #003366;
+            padding: 15px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #003366;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover { transform: translateY(-5px); background: #d32f2f; box-shadow: 0 10px 25px rgba(211, 47, 47, 0.3); }
+        .btn-secondary:hover { background: #f0f2f5; transform: translateY(-5px); }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mahmoud.Dev</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-wrapper">
+        <div class="circle-dec" style="top: -100px; right: -100px;"></div>
+        <div class="circle-dec" style="bottom: -150px; left: -100px; width: 500px; height: 500px;"></div>
+        
+        <div class="glass-hero">
+            <h1 class="hero-h1">Mahmoud Emad Elgendy</h1>
+            
+            
+            <p class="main-p">
+    IT Student at <strong>Sinai University</strong>. I am deeply passionate about learning and exploring 
+    the worlds of <span style="color: #003366; font-weight: bold;">Backend Development</span> with .NET, 
+    building data-driven insights using <span style="color: #003366; font-weight: bold;">Power BI</span>, 
+    and diving into the fundamentals of <span style="color: #003366; font-weight: bold;">Artificial Intelligence</span>.
+    <br>
+    Constantly working on projects to bridge the gap between academic theory and real-world technology.
+</p>
+
+           <div class="cta-btns">
+    <a href="projects.html" class="btn-primary">View My Work</a>
+    
+    <a href="Mahmoud_Elgendy_Resume.pdf" download class="btn-secondary" style="border-color: #d32f2f; color: #d32f2f;">
+        Download CV 📥
+    </a>
+    
+    <a href="contact.html" class="btn-secondary">Let's Contact</a>
+</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mahmoud Emad Elgendy | Built for the Future</p>
+    </footer>
+</body>
+</html>

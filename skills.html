@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills | Mahmoud Elgendy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .skill-box {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .skill-box:hover {
+            transform: translateY(-5px);
+            border-color: #003366;
+        }
+        .skill-box h3 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 8px;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag-container span {
+            background: #003366;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mahmoud.Dev</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.3rem; color: #003366;">Technical Arsenal</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>🚀 Languages & Core</h3>
+                <div class="tag-container">
+                    <span>C</span> <span>C++</span> <span>C#</span> <span>JavaScript</span> <span>OOP</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>⚙️ Backend & Database</h3>
+                <div class="tag-container">
+                    <span>SQL Server</span> <span>Basic of EF Core</span> <span>Basic of ASP.NET Core MVC</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>📊 Data Analysis</h3>
+                <div class="tag-container">
+                    <span>Power BI</span> <span>Excel</span> <span>Python</span> <span>NumPy</span> <span>Pandas</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>🌐 Web Foundation</h3>
+                <div class="tag-container">
+                    <span>HTML</span> <span>CSS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
